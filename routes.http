@@ -1,0 +1,25 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Vídeo C#",
+    "description": "Vídeo sobre C# e .NET",
+    "duration": 120
+}
+//Separando a requisição
+###
+GET http://localhost:3333/videos
+
+### 
+PUT http://localhost:3333/videos/3cfa9a08-be53-419d-a389-21aa50845185
+Content-Type: application/json
+
+{
+    "title": "Vídeo C#",
+    "description": "Vídeo sobre C#",
+    "duration": 120
+}
+
+###
+
+DELETE http://localhost:3333/videos/3cfa9a08-be53-419d-a389-21aa50845185
